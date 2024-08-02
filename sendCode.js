@@ -118,9 +118,9 @@ module.exports = {
     var cmd = '';
     if (focusWindow) {
        cmd += `tell application "${whichApp}" to activate\n`;
-       tellApple(cmd, text)
+    //    tellApple(cmd, text)
     }
-    var cmd = '';
+    // var cmd = '';
     cmd += `tell application "${whichApp}" to DoCommandAsync "${text}"\n`;
     tellApple(cmd, text)
 
